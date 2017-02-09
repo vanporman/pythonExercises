@@ -20,4 +20,4 @@ def is_person_code_valid(idcode):
         sumOfIdArr += i
     print sumOfIdArr
 
-digit_sum("38705050306")
+digit_sum("12345678912")
