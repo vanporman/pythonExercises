@@ -10,4 +10,4 @@ def anti_vowel(text):
     #print word
     return word
 
-anti_vowel('Anreas TEre!')
+anti_vowel('AnDreas TEre!')

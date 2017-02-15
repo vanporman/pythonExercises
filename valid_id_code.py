@@ -69,6 +69,8 @@ def is_person_code_valid(idcode):
         return True
 
 #is_person_code_valid("49403136526")
-#is_person_code_valid("47605030299")
+is_person_code_valid("47605030299")
 #is_person_code_valid("37605030299")
-is_person_code_valid("47810016580")
+#is_person_code_valid("37810018540")
+
+#peab kontrollima igat numbrit!!!!!

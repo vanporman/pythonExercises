@@ -1,25 +1,30 @@
 
 #from datetime import date
 from datetime import datetime, date
-#today = datetime.utcnow()
+today = datetime.utcnow()
+#today = date.today()
+today2 = datetime.date(today)
+today3 = datetime.date(today)
 
-today = date.today()
+birthdate = "1987-05-05"
+mybirthday = datetime.strptime(birthdate, "%Y-%m-%d")
+#print (mybirthday)
+mybirthday2 = datetime.date(mybirthday)
 
-def get_age(birth_date, current_date=None):
-    #utcnow = datetime.utcnow()
+def get_age(birth_date, current_date=today3):
+    #today3 = datetime.utcnow()
+    #today4 = datetime.date(today3)
     #timenow = current_date.strftime("%Y-%m-%d")
     print (current_date)
+    print (birth_date)
 
-    #mybirthday = date.strptime(birth_date, "%Y-%m-%d")#
-    mybirthday = datetime.strptime(birth_date, "%Y-%m-%d") #<---siin on kala!!!!!!
-    print (mybirthday)
-
-    age = (current_date.year - mybirthday.year - ((current_date.month, current_date.day) < (mybirthday.month, mybirthday.day)))
+    age = (current_date.year - birth_date.year - ((current_date.month, current_date.day) < (birth_date.month, birth_date.day)))
     print (age)
+    return age
     #print (current_date.year - mybirthday.year)
     #print (current_date.month, current_date.day)
     #print (mybirthday.month, mybirthday.day)
-    return age
 
-get_age("1987-05-05", today)
-get_age("1983-07-09", today)
+get_age(mybirthday2, today2)
+get_age(mybirthday2)
+
